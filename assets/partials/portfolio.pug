@@ -1,0 +1,19 @@
+- 
+    const portfolioLinks = [
+        'show all', 
+        'web', 
+        'adv', 
+        'design', 
+        'photo'
+    ]
+
+div(class='w-1/4 m-auto mb-8' id='portfolio-links')
+    ul.flex.w-full
+        each portfolioLink in portfolioLinks
+            li(class='w-1/5 text-center' key=portfolioLink)
+                a(href='#' class='text-xs font-medium')= portfolioLink.toUpperCase()
+|
+div#portfolio.flex.w-full
+    - for(let i = 1; i < 4; i++)
+        div(class='w-1/3 bg-blue-200 h-64')
+            img(src=(`./assets/img/${i}.jpg`))

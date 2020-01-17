@@ -1,0 +1,13 @@
+body, html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline: none;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
