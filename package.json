@@ -1,18 +1,20 @@
 {
-    "name"       : "agency",
-    "version"    : "1.0.0",
+    "name": "agency",
+    "version": "1.0.0",
     "description": "",
-    "main"       : "index.js",
-    "scripts"    : {
+    "main": "index.js",
+    "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords"    : [],
-    "author"      : "",
-    "license"     : "ISC",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
     "dependencies": {
-        "css"        : "^2.2.4",
-        "pug"        : "^2.0.4",
-        "tailwind"   : "^4.0.0",
+        "@fortawesome/fontawesome-free": "^5.12.0",
+        "@fortawesome/free-solid-svg-icons": "^5.12.0",
+        "css": "^2.2.4",
+        "pug": "^2.0.4",
+        "tailwind": "^4.0.0",
         "tailwindcss": "^1.1.4"
     }
 }

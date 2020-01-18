@@ -1,0 +1,35 @@
+- 
+    const socialLinks = [
+        {
+            class: 'fab fa-facebook-f',
+            url: 'https://facebook.com'
+        },
+        {
+            class: 'fab fa-twitter',
+            url: 'https://twitter.com'
+        },
+        {
+            class: 'fab fa-pinterest-p',
+            url: 'https://pinterest.com'
+        },
+        {
+            class: 'fab fa-linkedin-in',
+            url: 'https://linkedin.com'
+        },
+        {
+            class: 'fab fa-vimeo-v',
+            url: 'https://vimeo.com'
+        }
+    ]
+
+#footer.h-64.flex.content-center.relative
+    div(class='w-1/4 m-auto')
+        ul.flex.w-full.justify-around
+            each socialLink, index in socialLinks
+                li(class='text-center' key=index)
+                    a(href=socialLink.url target='_blank')
+                        i(class=socialLink.class class='text-gray-100 hover:text-red-400')
+    button: a(href='#'): i(
+        class='fas fa-chevron-up text-gray-100 text-xs p-3 rounded-sm' 
+        class='absolute-chevron'
+        )
