@@ -7,12 +7,36 @@
     ]
 
     const imgTabs = [
-        'tea-cover',
-        'landscape-cover',
-        'fog-cover',
-        'various-cover',
-        'tool-cover',
-        'product-cover'
+        {
+            name: 'tea',
+            url: 'tea-cover',
+            page: './assets/pages/product'
+        },
+        {
+            name: 'landscape',
+            url: 'landscape-cover',
+            page: ''
+        },
+        {
+            name: 'fog',
+            url: 'fog-cover',
+            page: ''
+        },
+        {
+            name: 'various',
+            url: 'various-cover',
+            page: ''
+        },
+        {
+            name: 'tool',
+            url: 'tool-cover',
+            page: ''
+        },
+        {
+            name: 'product',
+            url: 'product-cover',
+            page: ''
+        }
     ]
 
 div(class='w-1/4 m-auto mb-8' id='portfolio-links')
@@ -26,5 +50,7 @@ div(class='w-1/4 m-auto mb-8' id='portfolio-links')
 |
 div#portfolio.flex.w-full.flex-wrap
     each imgTab in imgTabs
-        div(class='w-1/3')
-            img(src=`./assets/img/covers/${imgTab}.jpg`)
+        div(class='w-1/3 relative text-center overflow-hidden')
+            a(href=imgTab.page) 
+                img(src=`./assets/img/covers/${imgTab.url}.jpg`)
+                p.absolute.text-gray-100.text-lg.text-semibold.opacity-0.pointer-events-none= imgTab.name

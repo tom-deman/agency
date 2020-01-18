@@ -15,6 +15,31 @@ button:focus {
   font-family: 'Raleway', sans-serif;
 }
 
+#portfolio img {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+#portfolio img:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#portfolio img:hover + p {
+  opacity: 1;
+}
+
+#portfolio p {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
 #footer {
   background-color: #141618;
 }
