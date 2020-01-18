@@ -7,6 +7,14 @@ button:focus {
   outline: none;
 }
 
+#touch {
+  background-color: #1b1d1f;
+}
+
+#footer {
+  background-color: #141618;
+}
+
 .title {
   font-family: 'Raleway', sans-serif;
 }
