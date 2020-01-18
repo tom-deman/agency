@@ -11,18 +11,18 @@ button:focus {
   background-color: #1b1d1f;
 }
 
+.title {
+  font-family: 'Raleway', sans-serif;
+}
+
 #footer {
   background-color: #141618;
 }
 
-.absolute-chevron {
+#footer .absolute-chevron {
   position: absolute;
   bottom: 30px;
   right: 30px;
   background-color: #303133;
-}
-
-.title {
-  font-family: 'Raleway', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
