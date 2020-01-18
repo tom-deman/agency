@@ -1,19 +1,30 @@
 - 
     const portfolioLinks = [
         'show all', 
-        'web', 
-        'adv', 
-        'design', 
-        'photo'
+        'landscapes', 
+        'products', 
+        'white', 
+    ]
+
+    const imgTabs = [
+        'tea-cover',
+        'landscape-cover',
+        'fog-cover',
+        'various-cover',
+        'tool-cover',
+        'product-cover'
     ]
 
 div(class='w-1/4 m-auto mb-8' id='portfolio-links')
-    ul.flex.w-full
-        each portfolioLink in portfolioLinks
-            li(class='w-1/5 text-center' key=portfolioLink)
-                a(href='#' class='text-xs font-medium')= portfolioLink.toUpperCase()
+    ul.flex.w-full.justify-around
+        each portfolioLink, index in portfolioLinks
+            li(class='text-center' key=index)
+                a(
+                    href='#' 
+                    class='text-xs font-medium text-gray-900 hover:text-gray-500'
+                )= portfolioLink.toUpperCase()
 |
-div#portfolio.flex.w-full
-    - for(let i = 1; i < 4; i++)
-        div(class='w-1/3 bg-blue-200 h-64')
-            img(src=(`./assets/img/${i}.jpg`))
+div#portfolio.flex.w-full.flex-wrap
+    each imgTab in imgTabs
+        div(class='w-1/3')
+            img(src=`./assets/img/covers/${imgTab}.jpg`)
