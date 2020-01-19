@@ -7,12 +7,12 @@ button:focus {
   outline: none;
 }
 
-#touch {
-  background-color: #1b1d1f;
-}
-
 .title {
   font-family: 'Raleway', sans-serif;
+}
+
+#portfolio {
+  background-color: #1b1d1f;
 }
 
 #portfolio img {
@@ -38,6 +38,10 @@ button:focus {
           transform: translate(-50%, -50%);
   -webkit-transition: .8s ease;
   transition: .8s ease;
+}
+
+#touch {
+  background-color: #1b1d1f;
 }
 
 #footer {
