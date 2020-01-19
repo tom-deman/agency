@@ -1,0 +1,77 @@
+- 
+    const modalLinks = [
+        {
+            category: 'Home',
+            url: ''
+        },
+        {
+            category: 'Tea',
+            url: './pages/product.html'
+        },
+        {
+            category: 'Landscape',
+            url: ''
+        },
+        {
+            category: 'Fog',
+            url: ''
+        },
+        {
+            category: 'Various',
+            url: ''
+        },
+        {
+            category: 'Tools',
+            url: ''
+        },
+        {
+            category: 'Products',
+            url: ''
+        },
+    ]
+
+    const socialLinks = [
+        {
+            class: 'fab fa-facebook-f',
+            url: 'https://facebook.com'
+        },
+        {
+            class: 'fab fa-twitter',
+            url: 'https://twitter.com'
+        },
+        {
+            class: 'fab fa-pinterest-p',
+            url: 'https://pinterest.com'
+        },
+        {
+            class: 'fab fa-linkedin-in',
+            url: 'https://linkedin.com'
+        },
+        {
+            class: 'fab fa-vimeo-v',
+            url: 'https://vimeo.com'
+        }
+    ]
+
+
+div(
+    id='modal' 
+    class='fixed flex top-0 w-full h-full z-10'
+)
+    div(class='text-center m-auto w-1/2')
+        each modalLink in modalLinks
+            ul
+                li(class='my-3')
+                    a(
+                        href=modalLink.url 
+                        class='text-gray-100 text-2xl font-semibold hover:text-gray-500'
+                        )= modalLink.category
+        div(class='flex h-6 justify-around m-auto w-48 mt-12')
+            each socialLink in socialLinks
+                a(
+                    href=socialLink.url 
+                    target='_blank'
+                ): i(
+                        class=socialLink.class
+                        class='text-gray-100 hover:text-gray-500'
+                    )

@@ -16,6 +16,14 @@ a, p, button, i {
   font-family: 'Raleway', sans-serif;
 }
 
+#modal {
+  background-color: rgba(3, 4, 5, 0.9);
+}
+
+#modal div {
+  height: 50%;
+}
+
 #portfolio {
   background-color: #1b1d1f;
 }
