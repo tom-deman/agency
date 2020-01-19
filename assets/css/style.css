@@ -7,6 +7,11 @@ button:focus {
   outline: none;
 }
 
+a, p, button, i {
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
 .title {
   font-family: 'Raleway', sans-serif;
 }
@@ -16,6 +21,8 @@ button:focus {
 }
 
 #portfolio img:hover {
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
