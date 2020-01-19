@@ -15,16 +15,9 @@ button:focus {
   background-color: #1b1d1f;
 }
 
-#portfolio img {
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
-}
-
 #portfolio img:hover {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 #portfolio img:hover + p {
@@ -38,6 +31,10 @@ button:focus {
           transform: translate(-50%, -50%);
   -webkit-transition: .8s ease;
   transition: .8s ease;
+}
+
+.testimonials-flex:hover p {
+  color: #f56565;
 }
 
 #touch {

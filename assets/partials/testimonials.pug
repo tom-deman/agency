@@ -1,0 +1,36 @@
+- 
+    const testimonials = [
+        {
+            date: 'January 12, 2020',
+            name: 'Jonie Lissa'
+        },
+        {
+            date: 'November 16, 2019',
+            name: 'Florence Brande'
+        },
+        {
+            date: 'April 24, 2019',
+            name: 'Ricki Hiram'
+        },
+        {
+            date: 'September 8, 2019',
+            name: 'Rocky Ronan'
+        },
+    ]
+
+    const loremSubject = 'Lorem ipsum dolor sit amet consectetur...'
+    const loremContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius dignissimos aperiam...'
+
+
+div(id='#testimonials' class='my-20 flex w-5/6 m-auto justify-between')
+    each testimonial, index in testimonials
+        div(class='w-1/5 px-5')
+            p(class='text-xs font-medium mb-3')= testimonial.date
+            a(href='#'): p(class='text-xl font-medium mb-2 hover:text-red-500')= loremSubject
+            p(class='font-light text-gray-600 mb-10')= loremContent
+            a(href='#' class='flex' class='testimonials-flex')
+                img(
+                    src=`./assets/img/testimonials/testimonials-${index + 1}.jpg`
+                    class='rounded-full h-8 w-8 mr-4'
+                )
+                p(class='text-xs font-medium mt-2' class='testimonials-name')= `by ${testimonial.name}`
