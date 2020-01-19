@@ -56,21 +56,23 @@
 
 div(
     id='modal' 
-    class='fixed flex top-0 w-full h-full z-10'
+    class='fixed flex top-0 w-full h-full z-10 animated fadeIn delay-1 hidden'
 )
-    div(class='text-center m-auto w-1/2')
-        each modalLink in modalLinks
+    div(class='text-center m-auto w-1/2' )
+        each modalLink, index in modalLinks
             ul
                 li(class='my-3')
                     a(
                         href=modalLink.url 
                         class='text-gray-100 text-2xl font-semibold hover:text-gray-500'
+                        class=`animated delay-${index + 1} fadeInDown`
                         )= modalLink.category
         div(class='flex h-6 justify-around m-auto w-48 mt-12')
             each socialLink in socialLinks
                 a(
                     href=socialLink.url 
                     target='_blank'
+                    class='animated delay-8 fadeInDown'
                 ): i(
                         class=socialLink.class
                         class='text-gray-100 hover:text-gray-500'
