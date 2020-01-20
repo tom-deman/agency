@@ -42,7 +42,6 @@
 div(
     class='w-1/4 m-auto mb-8' 
     id='portfolio-links'
-    x-data='{count: 1}'
 )
     ul.flex.w-full.justify-around
         each portfolioLink, index in portfolioLinks
@@ -50,21 +49,18 @@ div(
                 class='text-center' 
                 key=index
             )
-                a(
-                    href='#' 
+                button(
                     class='text-xs font-medium text-gray-900 hover:text-gray-500'
-                    class='portfolioLinks'
-                    :class="{ 'active': tab === 'foo' }"
-                    @click=`count = ${index + 1}`
+                    class='linksPortfolio'
                 )= portfolioLink.toUpperCase()
 |
-#portfolio.flex.w-full.flew-wrap
+#portfolio.flex.w-full.flex-wrap
     each imgTab, index in imgTabs
-        div(class='w-1/3 relative text-center overflow-hidden')
+        div(class='w-1/3 relative text-center overflow-hidden imgsDiv')
             a(href=imgTab.page) 
                 img(
                     src=`./assets/img/covers/${imgTab.url}.jpg`
                     class=`animated fadeInUp delay-${index}`
-                    class='portfolioImg'
+                    class='imgAnimate'
                 )
                 p.absolute.text-gray-100.text-lg.text-semibold.opacity-0.pointer-events-none= imgTab.name

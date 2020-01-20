@@ -50,26 +50,34 @@
         </div>
       </div>
     </div>
-    <div class="w-1/4 m-auto mb-8" id="portfolio-links" x-data="{count: 1}">
+    <div class="w-1/4 m-auto mb-8" id="portfolio-links">
       <ul class="flex w-full justify-around">
-        <li class="text-center" key="0"><a class="text-xs font-medium text-gray-900 hover:text-gray-500 portfolioLinks" href="#" :class="{ 'active': tab === 'foo' }" @click="count = 1">SHOW ALL</a></li>
-        <li class="text-center" key="1"><a class="text-xs font-medium text-gray-900 hover:text-gray-500 portfolioLinks" href="#" :class="{ 'active': tab === 'foo' }" @click="count = 2">LANDSCAPES</a></li>
-        <li class="text-center" key="2"><a class="text-xs font-medium text-gray-900 hover:text-gray-500 portfolioLinks" href="#" :class="{ 'active': tab === 'foo' }" @click="count = 3">PRODUCTS</a></li>
-        <li class="text-center" key="3"><a class="text-xs font-medium text-gray-900 hover:text-gray-500 portfolioLinks" href="#" :class="{ 'active': tab === 'foo' }" @click="count = 4">WHITE</a></li>
+        <li class="text-center" key="0">
+          <button class="text-xs font-medium text-gray-900 hover:text-gray-500 linksPortfolio">SHOW ALL</button>
+        </li>
+        <li class="text-center" key="1">
+          <button class="text-xs font-medium text-gray-900 hover:text-gray-500 linksPortfolio">LANDSCAPES</button>
+        </li>
+        <li class="text-center" key="2">
+          <button class="text-xs font-medium text-gray-900 hover:text-gray-500 linksPortfolio">PRODUCTS</button>
+        </li>
+        <li class="text-center" key="3">
+          <button class="text-xs font-medium text-gray-900 hover:text-gray-500 linksPortfolio">WHITE</button>
+        </li>
       </ul>
     </div>
-    <div class="flex w-full flew-wrap" id="portfolio">
-      <div class="w-1/3 relative text-center overflow-hidden"><a href="./pages/product.html"> <img class="animated fadeInUp delay-0 portfolioImg" src="./assets/img/covers/tea-cover.jpg"/>
+    <div class="flex w-full flex-wrap" id="portfolio">
+      <div class="w-1/3 relative text-center overflow-hidden imgsDiv"><a href="./pages/product.html"> <img class="animated fadeInUp delay-0 imgAnimate" src="./assets/img/covers/tea-cover.jpg"/>
           <p class="absolute text-gray-100 text-lg text-semibold opacity-0 pointer-events-none">Tea</p></a></div>
-      <div class="w-1/3 relative text-center overflow-hidden"><a href=""> <img class="animated fadeInUp delay-1 portfolioImg" src="./assets/img/covers/landscape-cover.jpg"/>
+      <div class="w-1/3 relative text-center overflow-hidden imgsDiv"><a href=""> <img class="animated fadeInUp delay-1 imgAnimate" src="./assets/img/covers/landscape-cover.jpg"/>
           <p class="absolute text-gray-100 text-lg text-semibold opacity-0 pointer-events-none">Landscapes</p></a></div>
-      <div class="w-1/3 relative text-center overflow-hidden"><a href=""> <img class="animated fadeInUp delay-2 portfolioImg" src="./assets/img/covers/fog-cover.jpg"/>
+      <div class="w-1/3 relative text-center overflow-hidden imgsDiv"><a href=""> <img class="animated fadeInUp delay-2 imgAnimate" src="./assets/img/covers/fog-cover.jpg"/>
           <p class="absolute text-gray-100 text-lg text-semibold opacity-0 pointer-events-none">Fog</p></a></div>
-      <div class="w-1/3 relative text-center overflow-hidden"><a href=""> <img class="animated fadeInUp delay-3 portfolioImg" src="./assets/img/covers/various-cover.jpg"/>
+      <div class="w-1/3 relative text-center overflow-hidden imgsDiv"><a href=""> <img class="animated fadeInUp delay-3 imgAnimate" src="./assets/img/covers/various-cover.jpg"/>
           <p class="absolute text-gray-100 text-lg text-semibold opacity-0 pointer-events-none">Various</p></a></div>
-      <div class="w-1/3 relative text-center overflow-hidden"><a href=""> <img class="animated fadeInUp delay-4 portfolioImg" src="./assets/img/covers/tool-cover.jpg"/>
+      <div class="w-1/3 relative text-center overflow-hidden imgsDiv"><a href=""> <img class="animated fadeInUp delay-4 imgAnimate" src="./assets/img/covers/tool-cover.jpg"/>
           <p class="absolute text-gray-100 text-lg text-semibold opacity-0 pointer-events-none">Tools</p></a></div>
-      <div class="w-1/3 relative text-center overflow-hidden"><a href=""> <img class="animated fadeInUp delay-5 portfolioImg" src="./assets/img/covers/product-cover.jpg"/>
+      <div class="w-1/3 relative text-center overflow-hidden imgsDiv"><a href=""> <img class="animated fadeInUp delay-5 imgAnimate" src="./assets/img/covers/product-cover.jpg"/>
           <p class="absolute text-gray-100 text-lg text-semibold opacity-0 pointer-events-none">Products</p></a></div>
     </div>
     <div class="my-20 flex w-5/6 m-auto justify-between" id="#testimonials">

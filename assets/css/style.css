@@ -52,6 +52,10 @@ a, p, button, i, div {
   animation-delay: 2s;
 }
 
+.hover-link {
+  color: #a0aec0;
+}
+
 .title {
   font-family: 'Raleway', sans-serif;
 }
@@ -62,10 +66,6 @@ a, p, button, i, div {
 
 #modal div {
   height: 50%;
-}
-
-#portfolio {
-  background-color: #1b1d1f;
 }
 
 #portfolio img:hover {
