@@ -77,6 +77,16 @@ a, p, button, i, div {
   background-image: url("../img/fog/fog-2.jpg");
   height: 45vh;
   background-size: 100%;
+  background-position: center;
+}
+
+.scroll-part {
+  height: 90vh;
+}
+
+.fixed-gallery {
+  height: 90vh;
+  overflow: scroll;
 }
 
 .title {
