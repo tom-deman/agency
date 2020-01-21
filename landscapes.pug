@@ -5,9 +5,24 @@ html(lang='en')
         title Landscapes
     body
     
-        include ./assets/partials/navbar
+        include ./assets/partials/mixin
+        
+        +navbar('navbar-top')
 
         include ./assets/partials/modal
+
+        div(
+            id="header" 
+            class='w-full' 
+            class='bg-img-landscapes'
+        )
+
+        include ./assets/partials/global/show
+
+        #images.my-16
+            include ./assets/partials/mixin
+
+            +forImg('landscape/landscape-', 4)
 
         include ./assets/partials/footer
 

@@ -5,9 +5,24 @@ html(lang='en')
         title Fog
     body
     
-        include ./assets/partials/navbar
+        include ./assets/partials/mixin
+        
+        +navbar('navbar-top')
 
         include ./assets/partials/modal
+
+        div(
+            id="header" 
+            class='w-full' 
+            class='bg-img-fog'
+        )
+
+        include ./assets/partials/global/show
+
+        #images.my-16
+            include ./assets/partials/mixin
+
+            +forImg('fog/fog-', 7)
 
         include ./assets/partials/footer
 

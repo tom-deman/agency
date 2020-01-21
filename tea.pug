@@ -4,8 +4,9 @@ html(lang='en')
     include ./assets/partials/head
         title Tea
     body
+
+        include ./assets/partials/mixin
     
-        include ./assets/partials/navbar
         +navbar('navbar-top')
 
         include ./assets/partials/modal
@@ -16,9 +17,10 @@ html(lang='en')
             class='bg-img-tea'
         )
 
-        include ./assets/partials/tea/show
+        include ./assets/partials/global/show
 
-        include ./assets/partials/tea/images
+        #images.my-16
+            +forImg('tea/tea-', 7)
 
         include ./assets/partials/footer
 
