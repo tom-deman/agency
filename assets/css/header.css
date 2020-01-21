@@ -1,0 +1,9 @@
+.bg-img-tea {
+  background-image: url("../img/tea/tea-3.jpg");
+  height: 35vh;
+  background-size: 100%;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+}
+/*# sourceMappingURL=header.css.map */

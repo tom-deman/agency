@@ -106,4 +106,15 @@ a, p, button, i, div {
   right: 30px;
   background-color: #303133;
 }
+
+.bg-img-tea {
+  background-image: url("../img/tea/tea-3.jpg");
+  height: 45vh;
+  background-size: 100%;
+}
+
+.navbar-top {
+  position: absolute;
+  top: 0;
+}
 /*# sourceMappingURL=style.css.map */
