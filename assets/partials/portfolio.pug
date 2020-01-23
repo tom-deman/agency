@@ -40,7 +40,7 @@
     ]
 
 div(
-    class='w-1/4 m-auto mb-8' 
+    class='md:w-1/4 w-full m-auto mb-8' 
     id='portfolio-links'
 )
     ul.flex.w-full.justify-around
@@ -56,7 +56,7 @@ div(
 |
 #portfolio.flex.w-full.flex-wrap
     each imgTab, index in imgTabs
-        div(class='w-1/3 relative text-center overflow-hidden imgsDiv')
+        div(class='md:w-1/3 w-1/2 relative text-center overflow-hidden imgsDiv')
             a(href=imgTab.page) 
                 img(
                     src=`./assets/img/covers/${imgTab.url}.jpg`

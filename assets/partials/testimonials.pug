@@ -22,7 +22,7 @@
     const loremContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius dignissimos aperiam...'
 
 
-div(id='#testimonials' class='my-20 flex w-5/6 m-auto justify-between')
+div(id='#testimonials' class='hidden my-20 md:flex w-5/6 m-auto justify-between')
     each testimonial, index in testimonials
         div(class='w-1/5 px-5')
             p(class='text-xs font-medium mb-3')= testimonial.date
