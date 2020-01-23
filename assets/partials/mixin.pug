@@ -22,7 +22,7 @@
 mixin forImg(a, b)
     div(class='flex flex-wrap p-3')
         - for(let i = 1; i < b; i ++)
-            div(class='w-1/3 p-3')
+            div(class='md:w-1/3 w-full p-3')
                 img(src=`./assets/img/${a}${i}.jpg`)
 
 

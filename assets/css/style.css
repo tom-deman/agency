@@ -81,12 +81,14 @@ a, p, button, i, div {
   background-image: url("../img/tea/tea-3.jpg");
   height: 45vh;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .bg-img-landscapes {
   background-image: url("../img/landscape/landscape-3.jpg");
   height: 45vh;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .bg-img-fog {
@@ -94,6 +96,7 @@ a, p, button, i, div {
   height: 45vh;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .scroll-div::-webkit-scrollbar {
