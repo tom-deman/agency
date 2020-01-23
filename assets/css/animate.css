@@ -3568,41 +3568,6 @@
   animation-iteration-count: infinite;
 }
 
-/* .animated.delay-1 {
-  -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-}
-
-.animated.delay-2 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.animated.delay-3 {
-  -webkit-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-}
-
-.animated.delay-4 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.animated.delay-5 {
-  -webkit-animation-delay: 1.25s;
-  animation-delay: 1.25s;
-}
-
-.animated.delay-6 {
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-
-.animated.delay-7 {
-  -webkit-animation-delay: 1.75s;
-  animation-delay: 1.75s;
-} */
-
 .animated.fast {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms;

@@ -26,11 +26,16 @@ div(id='#testimonials' class='my-20 flex w-5/6 m-auto justify-between')
     each testimonial, index in testimonials
         div(class='w-1/5 px-5')
             p(class='text-xs font-medium mb-3')= testimonial.date
-            a(href='#'): p(class='text-xl font-medium mb-2 hover:text-red-500')= loremSubject
+            a: p(class='text-xl font-medium mb-2 hover:text-red-500')= loremSubject
             p(class='font-light text-gray-600 mb-10')= loremContent
-            a(href='#' class='flex' class='testimonials-flex')
+            a(
+                class='flex' 
+                class='testimonials-flex'
+            )
                 img(
                     src=`./assets/img/testimonials/testimonials-${index + 1}.jpg`
                     class='rounded-full h-8 w-8 mr-4'
                 )
-                p(class='text-xs font-medium mt-2' class='testimonials-name')= `by ${testimonial.name}`
+                p(
+                    class='text-xs font-medium mt-2' 
+                    class='testimonials-name')= `by ${testimonial.name}`
