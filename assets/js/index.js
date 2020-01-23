@@ -31,6 +31,7 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
                 for(let i = 0; i < imgsDiv.length; i++) {
                     imgsDiv[i].classList.remove('hidden')
                     imgAnimate[i].classList = 'imgAnimate'
+                    imgAnimate[i].classList.add('animated', 'fadeInUp', `delay-${i}`)
                 }
 
                 break
@@ -42,6 +43,8 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
                 
                 remove(1)
                 remove(2)
+                imgAnimate[1].classList.add('animated', 'fadeIn', 'delay-1')
+                imgAnimate[2].classList.add('animated', 'fadeIn', 'delay-2')
                 break
             case 2:
                 for(let i = 0; i < imgsDiv.length; i++) {
@@ -51,6 +54,8 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
 
                 remove(4)
                 remove(5)
+                imgAnimate[4].classList.add('animated', 'fadeInDown', 'delay-1')
+                imgAnimate[5].classList.add('animated', 'fadeInDown', 'delay-2')
                 break
             case 3:
                 for(let i = 0; i < imgsDiv.length; i++) {
@@ -61,6 +66,9 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
                 remove(1)
                 remove(4)
                 remove(5)
+                imgAnimate[1].classList.add('animated', 'fadeInRight', 'delay-1')
+                imgAnimate[4].classList.add('animated', 'fadeInRight', 'delay-2')
+                imgAnimate[5].classList.add('animated', 'fadeInRight', 'delay-3')
                 break
             default:
                 // Do nothing
