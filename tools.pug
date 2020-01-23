@@ -5,10 +5,12 @@ html(lang='en')
         title Tools
     body
     
-        include ./assets/partials/navbar
+        include ./assets/partials/mixin
 
         include ./assets/partials/modal
 
-        include ./assets/partials/footer
+        +navbar
+
+        +scrollImg(5, 'tool/tool-')
 
         include ./assets/partials/scripts
