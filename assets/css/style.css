@@ -12,6 +12,22 @@ a, p, button, i, div {
   transition: .2s ease;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ececec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8f8f8f;
+}
+
 .delay-1 {
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
@@ -80,13 +96,25 @@ a, p, button, i, div {
   background-position: center;
 }
 
-.scroll-part {
+.scroll-div::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-part .scroll-div {
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: scroll;
+}
+
+.scroll-part .scroll-div .fixed-gallery {
   height: 90vh;
 }
 
-.fixed-gallery {
-  height: 90vh;
-  overflow: scroll;
+.scroll-part .scroll-div .stay-here {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  top: 0;
 }
 
 .title {
