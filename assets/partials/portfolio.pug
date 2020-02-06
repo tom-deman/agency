@@ -1,9 +1,9 @@
 - 
     const portfolioLinks = [
-        'show all', 
-        'landscapes', 
-        'products', 
-        'white', 
+        'show all',
+        'landscapes',
+        'products',
+        'white',
     ]
 
     const imgTabs = [
@@ -40,13 +40,13 @@
     ]
 
 div(
-    class='md:w-1/4 w-full m-auto mb-8' 
+    class='md:w-1/4 w-full m-auto mb-8'
     id='portfolio-links'
 )
     ul.flex.w-full.justify-around
         each portfolioLink, index in portfolioLinks
             li(
-                class='text-center' 
+                class='text-center'
                 key=index
             )
                 button(
@@ -57,7 +57,7 @@ div(
 #portfolio.flex.w-full.flex-wrap
     each imgTab, index in imgTabs
         div(class='md:w-1/3 w-1/2 relative text-center overflow-hidden imgsDiv')
-            a(href=imgTab.page) 
+            a(href=imgTab.page)
                 img(
                     src=`./assets/img/covers/${imgTab.url}.jpg`
                     class=`animated fadeInUp delay-${index}`

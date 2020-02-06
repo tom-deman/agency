@@ -4,12 +4,12 @@ div(class='w-1/3')
     ul.flex.justify-around
         each socialLink, index in socialLinks
             li(
-                class='text-center' 
+                class='text-center'
                 key=index
             ): a(
-                    href=socialLink.url 
+                    href=socialLink.url
                     target='_blank'
                 ): i(
-                        class=socialLink.class 
+                        class=socialLink.class
                         class='hover:text-gray-600'
                     )

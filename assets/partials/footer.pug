@@ -3,17 +3,17 @@
         ul.flex.w-full.justify-around
             each socialLink, index in socialLinks
                 li(
-                    class='text-center' 
+                    class='text-center'
                     key=index
                 ): a(
-                        href=socialLink.url 
+                        href=socialLink.url
                         target='_blank'
                     ): i(
-                            class=socialLink.class 
+                            class=socialLink.class
                             class='text-gray-100 hover:text-red-400'
                         )
     button: a(href='#')
         i(
-            class='fas fa-chevron-up text-gray-100 text-xs p-3 rounded-sm' 
+            class='fas fa-chevron-up text-gray-100 text-xs p-3 rounded-sm'
             class='absolute-chevron'
         )

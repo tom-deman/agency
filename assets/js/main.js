@@ -16,16 +16,15 @@ modal.addEventListener('click', () => {
     modal.classList.add('hidden')
 })
 
-const remove = ((a) => {
+const remove = (a) => 
     imgsDiv[a].classList.remove('hidden')
-})
 
 for(let i = 0; i < linksPortfolio.length; i ++) 
     linksPortfolio[i].addEventListener('click', () => {
         for(let i = 0; i < linksPortfolio.length; i ++)
             linksPortfolio[i].classList.remove('hover-link')
-
         linksPortfolio[i].classList.add('hover-link')
+
         switch(i) {
             case 0:
                 for(let i = 0; i < imgsDiv.length; i++) {
@@ -40,11 +39,12 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
                     imgsDiv[i].classList.add('hidden')
                     imgAnimate[i].classList = 'imgAnimate'
                 }
-                
+
                 remove(1)
                 remove(2)
                 imgAnimate[1].classList.add('animated', 'fadeInLeft', 'delay-1')
                 imgAnimate[2].classList.add('animated', 'fadeInLeft', 'delay-2')
+
                 break
             case 2:
                 for(let i = 0; i < imgsDiv.length; i++) {
@@ -56,6 +56,7 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
                 remove(5)
                 imgAnimate[4].classList.add('animated', 'fadeInDown', 'delay-1')
                 imgAnimate[5].classList.add('animated', 'fadeInDown', 'delay-2')
+
                 break
             case 3:
                 for(let i = 0; i < imgsDiv.length; i++) {
@@ -69,8 +70,7 @@ for(let i = 0; i < linksPortfolio.length; i ++) 
                 imgAnimate[1].classList.add('animated', 'fadeInRight', 'delay-1')
                 imgAnimate[4].classList.add('animated', 'fadeInRight', 'delay-2')
                 imgAnimate[5].classList.add('animated', 'fadeInRight', 'delay-3')
+
                 break
-            default:
-                // Do nothing
         }
     })
