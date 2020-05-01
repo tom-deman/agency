@@ -1,8 +1,8 @@
-const burger = document.querySelector('.burger')
-const modal = document.querySelector('#modal')
+const burger         = document.querySelector('.burger')
+const modal          = document.querySelector('#modal')
 const linksPortfolio = document.querySelectorAll('.linksPortfolio')
-const imgsDiv = document.querySelectorAll('.imgsDiv')
-const imgAnimate = document.querySelectorAll('.imgAnimate')
+const imgsDiv        = document.querySelectorAll('.imgsDiv')
+const imgAnimate     = document.querySelectorAll('.imgAnimate')
 
 
 burger.addEventListener('click', () => {
