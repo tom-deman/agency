@@ -5,7 +5,7 @@ const imgsDiv        = document.querySelectorAll('.imgsDiv')
 const imgAnimate     = document.querySelectorAll('.imgAnimate')
 
 
-burger.addEventListener('click', () => {
+burger.addEventListener( 'click', () => {
     burger.classList.add('animated', 'fadeOut', 'delay-1')
     modal.classList.remove('hidden')
 })
